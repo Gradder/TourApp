@@ -70,10 +70,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new SaintPetersburg(), "Saint - Petersburg");
-        adapter.addFragment(new PalaceSquare(), "Palace Square");
-        adapter.addFragment(new Hermitage(), "Hermitage Museum");
-        adapter.addFragment(new NevskyProspect(), "Nevsky Prospect");
+        adapter.addFragment(new SaintPetersburg(), getString(R.string.spb_title));
+        adapter.addFragment(new PalaceSquare(), getString(R.string.palace_square_title));
+        adapter.addFragment(new Hermitage(), getString(R.string.hermitage_title));
+        adapter.addFragment(new NevskyProspect(), getString(R.string.nevsky_prospect_title));
         viewPager.setAdapter(adapter);
     }
 }
